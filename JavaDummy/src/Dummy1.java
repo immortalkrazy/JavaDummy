@@ -9,6 +9,7 @@ public class Dummy1 {
       private static void printDummy() {
 
             System.out.println("This is a dummy project");
+            System.out.println("Test");
 
       }
 
