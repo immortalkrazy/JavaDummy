@@ -10,6 +10,7 @@ public class Dummy1 {
 
             System.out.println("This is a dummy project");
             System.out.println("Test");
+            System.out.println("This 3rd line is from desktop");
 
       }
 
