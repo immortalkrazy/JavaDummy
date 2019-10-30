@@ -12,6 +12,7 @@ public class Dummy1 {
             System.out.println("Test");
             System.out.println("This 3rd line is from desktop");
             System.out.println("conflict test from desktop");
+            System.out.println("conflict test from laptop");
 
       }
 
