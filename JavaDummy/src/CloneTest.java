@@ -8,10 +8,12 @@ public class CloneTest {
 
             Employee emp2 = (Employee) emp1.clone();
 
-            emp1.setLastName("Smith");
+            // emp1.setLastName("Smith");
 
             System.out.println(emp1);
             System.out.println(emp2);
+
+            System.out.println("Employees emp1 & emp2 equal?: " + emp1.equals(emp2));
 
       }
 
@@ -66,6 +68,24 @@ public class CloneTest {
                   employee = new Employee(this.firstName, this.lastName);
                   employee.setSalary(this.salary);
                   return employee;
+            }
+
+            @SuppressWarnings("unused")
+            public boolean equals(Object obj) {
+                  if (this == obj) {
+                        return true;
+                  }
+                  if (this == null) {
+                        return false;
+                  }
+                  if (this.getClass() != obj.getClass()) {
+                        return false;
+                  }
+                  Employee employee = (Employee) obj;
+
+                  return this.getFirstName().equals(employee.getFirstName())
+                              && this.getLastName().equals(employee.getLastName());
+
             }
 
       }
